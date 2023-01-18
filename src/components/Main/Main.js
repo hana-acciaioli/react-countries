@@ -6,9 +6,9 @@ import { useCountries } from '../../hooks/useCountries';
 export default function Main() {
   const countries = useCountries();
   return (
-    <main>
+    <main className="main">
       {countries.map((country) => (
-        <CountryCard key={countries.id} {...country} />
+        <CountryCard key={country.id} {...country} />
       ))}
     </main>
   );

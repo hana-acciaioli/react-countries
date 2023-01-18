@@ -1,8 +1,9 @@
 .country-card {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 100px 100px;
   grid-template-areas: 'detail' 'image';
-  width: 80vw;
+  /* width: 80vw; */
+  height: auto;
   margin: 10px;
   padding: 10px;
   border-bottom: 2px solid var(--color3);
@@ -30,4 +31,5 @@
 .image img {
   width: 100%;
   border-radius: 5px;
+  height: 100%;
 }

@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.details {
+  grid-area: 'detail';
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.image {
+  grid-area: 'image';
+}
+.image img {
+  width: 100%;
+  border-radius: 5px;
+}
