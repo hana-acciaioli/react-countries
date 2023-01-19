@@ -7,16 +7,22 @@ import Controller from '../Controller/Controller';
 export default function Main() {
   const { countries, error } = useCountries();
   const [continent, setContinent] = useState('all');
+  //   const [sort, setSort] = useState('');
   const filtered = countries.filter(
     (country) => country.continent === continent || continent === 'all'
   );
   return (
-    <main className="main">
-      <Controller {...{ setContinent, countries }} />
+    <main>
+      <Controller className="controller" {...{ setContinent, countries }} />
       <p style={{ color: 'red' }}>{error}</p>
-      {filtered.map((country) => (
-        <CountryCard key={country.id} {...country} />
-      ))}
+      <div className="main">
+        {/* {filtered.sort((a, b) => (a.country > b.country ? 1 : -1))} */}
+        {filtered
+          //   .sort((a, b) => a.country.name > b.country.name)
+          .map((country) => (
+            <CountryCard key={country.id} {...country} />
+          ))}
+      </div>
     </main>
   );
 }

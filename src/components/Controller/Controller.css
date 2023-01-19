@@ -1,5 +1,11 @@
 .controller {
+  height: 40px;
+  color: white;
+  background-color: rgb(37, 53, 73);
+  width: 100%;
+  color: var(--color1);
   display: flex;
-  justify-content: center;
+  align-items: center;
+  /* padding-left: 20px; */
   position: relative;
 }
